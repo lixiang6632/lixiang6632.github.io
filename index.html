@@ -512,6 +512,41 @@ $(function () {
                     
 
                     
+                        
+
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-music"></i>&nbsp;&nbsp;听听音乐
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'false' === 'true',
+        autoplay: 'true' === 'true',
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: Number('0.7'),
+        listFolded: 'false' === 'true',
+        listMaxHeight: '',
+        audio: JSON.parse('[{"name":"借我","artist":"谢春花","url":"http://isure.stream.qqmusic.qq.com/C400001oaqRo0q7Csu.m4a?guid=8559387086&vkey=FD8C220B65AC3A0CEAE86D5F44C18507562C3B0AF8838F4640DE1C4E2E629D338321C638C81BE01730B1C8B733704587CC9941FCB476E88E&uin=3428&fromtag=66","cover":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000aCAG748KoJQ.jpg?max_age=2592000"}]')
+    });
+});
+</script>
+                    
 
                     
 
@@ -616,7 +651,7 @@ $(function () {
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">年份</span>
-            <a href="https://lixiang6632.github.io/lixiang6632.github.oi" target="_blank">Li Xiang</a>
+            <a href="https://lixiang6632.github.io/lixiang6632.github.io" target="_blank">Li Xiang</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
